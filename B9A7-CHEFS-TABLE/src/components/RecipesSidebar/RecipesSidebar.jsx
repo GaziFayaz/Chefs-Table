@@ -7,6 +7,7 @@ import TotalTimeCalorie from "../TotalTimeCalorie/TotalTimeCalorie";
 const RecipesSidebar = ({
 	wantToCookRecipes,
 	handlePreparing,
+  handleFinish,
 	currentlyCookingRecipes,
   totalTime,
   totalCalorie
@@ -18,7 +19,7 @@ const RecipesSidebar = ({
 					wantToCookRecipes={wantToCookRecipes}
 					handlePreparing={handlePreparing}
 				/>
-				<CurrentlyCooking currentlyCookingRecipes={currentlyCookingRecipes} />
+				<CurrentlyCooking currentlyCookingRecipes={currentlyCookingRecipes} handleFinish={handleFinish} />
         <TotalTimeCalorie totalTime={totalTime} totalCalorie={totalCalorie}/>
 			</div>
 		</div>

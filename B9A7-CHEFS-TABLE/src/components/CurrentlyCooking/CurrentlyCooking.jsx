@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const CurrentlyCooking = ({ currentlyCookingRecipes }) => {
+const CurrentlyCooking = ({ currentlyCookingRecipes, handleFinish }) => {
 	return (
 		<div className="w-full mb-8 text-center">
 			<h1 className="currently-cooking-title text-2xl font-semibold">
@@ -29,6 +29,14 @@ const CurrentlyCooking = ({ currentlyCookingRecipes }) => {
 										<td>{recipe.recipe_name}</td>
 										<td>{recipe.preparing_time}</td>
 										<td>{recipe.calories}</td>
+										<td>
+											<button
+												className="btn bg-warning rounded-full"
+												onClick={() => handleFinish(recipe.id)}
+											>
+												Finish
+											</button>
+										</td>
 									</tr>
 								);
 							})}

@@ -3,7 +3,7 @@ import Recipe from "../Recipe/Recipe";
 import RecipesSidebar from "../RecipesSidebar/RecipesSidebar";
 import { useEffect, useState } from "react";
 
-const Recipes = () => {
+const Recipes = ({showToast}) => {
 	const [recipes, setRecipes] = useState([]);
 	const [wantToCookRecipes, setWantToCookRecipes] = useState([]);
 	const [currentlyCookingRecipes, setCurrentlyCookingRecipes] = useState([]);
@@ -17,11 +17,14 @@ const Recipes = () => {
 	}, []);
 
 	const handleWantToCook = (id) => {
-		if (!wantToCookRecipes.find((recipe) => recipe.id === id)) {
+		if (!wantToCookRecipes.find((recipe) => recipe.id === id) && !currentlyCookingRecipes.find((recipe) => recipe.id === id)) {
 			const recipe = recipes.find((recipe) => recipe.id === id);
 			setWantToCookRecipes([...wantToCookRecipes, recipe]);
 			setTotalTime((totalTime + recipe.preparing_time));
 			setTotalCalorie((totalCalorie + recipe.calories));
+		}
+		else {
+			showToast()
 		}
 	};
 
@@ -34,6 +37,13 @@ const Recipes = () => {
 		setCurrentlyCookingRecipes([...currentlyCookingRecipes, recipe]);
 		console.log(currentlyCookingRecipes);
 	};
+
+	const handleFinish = (id) => {
+		const recipe = recipes.find((recipe) => recipe.id === id);
+		setCurrentlyCookingRecipes(currentlyCookingRecipes.filter((recipe) => recipe.id !== id))
+		setTotalTime(totalTime-recipe.preparing_time)
+		setTotalCalorie(totalCalorie-recipe.calories)
+	}
 
 	return (
 		<div className="flex flex-col items-center justify-center">
@@ -56,6 +66,7 @@ const Recipes = () => {
 				<RecipesSidebar
 					wantToCookRecipes={wantToCookRecipes}
 					handlePreparing={handlePreparing}
+					handleFinish={handleFinish}
 					currentlyCookingRecipes={currentlyCookingRecipes}
 					totalTime={totalTime}
 					totalCalorie={totalCalorie}

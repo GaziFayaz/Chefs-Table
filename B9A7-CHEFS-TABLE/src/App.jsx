@@ -1,17 +1,33 @@
-import './App.css'
-import Navbar from './components/Navbar/Navbar'
-import Banner from './components/Banner/Banner'
-import Recipes from './components/Recipes/Recipes'
+import "./App.css";
+import Navbar from "./components/Navbar/Navbar";
+import Banner from "./components/Banner/Banner";
+import Recipes from "./components/Recipes/Recipes";
+import Toast from "./components/Toast/Toast";
+import { useEffect, useState } from "react";
 
 function App() {
+	const [isToast, setIsToast] = useState(false);
 
-  return (
-    <div className='mx-20'>
-      <Navbar/>
-      <Banner/>
-      <Recipes/>
-    </div>
-  )
+  useEffect(() => {
+    if(isToast){
+      setInterval(() => {
+				setIsToast(false);
+		}, 4000);
+    }
+  }, [isToast])
+  
+
+	const showToast = () => {
+		setIsToast(true);
+	};
+	return (
+		<div className="mx-20">
+			<Navbar />
+			<Banner />
+			<Recipes showToast={showToast} />
+			{isToast && <Toast />}
+		</div>
+	);
 }
 
-export default App
+export default App;

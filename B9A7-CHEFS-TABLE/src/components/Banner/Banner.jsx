@@ -5,15 +5,17 @@ const Banner = () => {
 				Discover an exceptional cooking class tailored for you!
 			</h1>
 			<p className="banner-desc text-lg leading-[30px] text-base-100">
-				Learn and Master Basic Programming, Data Structures, Algorithm, OOP,
-				Database and solve 500+ coding problems to become an exceptionally well
-				world-class Programmer.
+				Explore and immerse Yourself in Epicurean Adventures: Explore Cooking
+				Classes Customized to Your Unique Taste!
 			</p>
-      <div className="flex gap-6 pt-4">
-        <button className="btn rounded-full bg-theme border-none">Explore Now</button>
-      <button className="btn rounded-full bg-transparent border-base-100 text-base-100">Our Feedback</button>
-      </div>
-      
+			<div className="flex gap-6 pt-4">
+				<button className="btn rounded-full bg-theme border-none">
+					Explore Now
+				</button>
+				<button className="btn rounded-full bg-transparent border-base-100 text-base-100">
+					Our Feedback
+				</button>
+			</div>
 		</div>
 	);
 };

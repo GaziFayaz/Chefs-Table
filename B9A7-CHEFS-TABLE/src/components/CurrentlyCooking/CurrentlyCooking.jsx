@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const CurrentlyCooking = ({ currentlyCookingRecipes, handleFinish }) => {
 	return (
-		<div className="w-full mb-8 text-center">
+		<div className="w-full mb-8 text-center  font-firaSans">
 			<h1 className="currently-cooking-title text-2xl font-semibold">
 				Currently cooking: <span>{currentlyCookingRecipes.length}</span>
 			</h1>

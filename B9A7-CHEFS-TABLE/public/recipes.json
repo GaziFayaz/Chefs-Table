@@ -1,0 +1,56 @@
+[
+  {
+    "recipe_image": "image_url_1.jpg",
+    "id": 1,
+    "recipe_name": "Basil Chicken Stir-Fry",
+    "short_description": "A delicious stir-fry with chicken, basil, and mushrooms.",
+    "ingredients": ["550g chicken", "120ml soy sauce", "200g basil leaves", "400g mushrooms"],
+    "preparing_time": 30,
+    "calories": 320
+  },
+  {
+    "recipe_image": "image_url_2.jpg",
+    "id": 2,
+    "recipe_name": "Vegetable Pasta Primavera",
+    "short_description": "A colorful pasta dish with assorted vegetables.",
+    "ingredients": ["300g pasta", "1 bell pepper", "1 zucchini", "1 carrot", "200g cherry tomatoes"],
+    "preparing_time": 25,
+    "calories": 280
+  },
+  {
+    "recipe_image": "image_url_3.jpg",
+    "id": 3,
+    "recipe_name": "Grilled Salmon with Lemon Herb Sauce",
+    "short_description": "Juicy grilled salmon fillets topped with a tangy herb sauce.",
+    "ingredients": ["4 salmon fillets", "2 lemons", "2 cloves garlic", "30g fresh dill", "Olive oil"],
+    "preparing_time": 20,
+    "calories": 350
+  },
+  {
+    "recipe_image": "image_url_4.jpg",
+    "id": 4,
+    "recipe_name": "Caprese Salad",
+    "short_description": "A simple yet flavorful Italian salad with tomatoes, mozzarella, and basil.",
+    "ingredients": ["4 ripe tomatoes", "200g fresh mozzarella", "Handful of fresh basil leaves", "Balsamic vinegar"],
+    "preparing_time": 15,
+    "calories": 180
+  },
+  {
+    "recipe_image": "image_url_5.jpg",
+    "id": 5,
+    "recipe_name": "Quinoa and Black Bean Stuffed Peppers",
+    "short_description": "Nutritious and protein-packed stuffed peppers with quinoa and black beans.",
+    "ingredients": ["4 large bell peppers", "1 cup cooked quinoa", "1 can black beans", "1 onion", "1 avocado"],
+    "preparing_time": 40,
+    "calories": 290
+  },
+  {
+    "recipe_image": "image_url_6.jpg",
+    "id": 6,
+    "recipe_name": "Mushroom Risotto",
+    "short_description": "Creamy and savory risotto loaded with mushrooms.",
+    "ingredients": ["300g Arborio rice", "400g mushrooms", "1 onion", "2 cloves garlic", "1 liter vegetable broth"],
+    "preparing_time": 35,
+    "calories": 380
+  }
+]

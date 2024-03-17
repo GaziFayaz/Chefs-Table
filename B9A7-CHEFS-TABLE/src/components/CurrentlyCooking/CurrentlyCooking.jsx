@@ -1,12 +1,14 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react";
+import PropTypes from "prop-types";
 
-const CurrentlyCooking = props => {
-  return (
-    <div className="w-full mb-8 text-center">
+const CurrentlyCooking = ({ currentlyCookingRecipes }) => {
+	return (
+		<div className="w-full mb-8 text-center">
 			<h1 className="currently-cooking-title text-2xl font-semibold">
-				Currently cooking: <span>02</span>
-				<hr className="w-1/2 text-center mx-auto" />
+				Currently cooking: <span>{currentlyCookingRecipes.length}</span>
+			</h1>
+			<hr className="w-1/2 text-center mx-auto" />
+			{currentlyCookingRecipes.length ? (
 				<div className="overflow-x-auto">
 					<table className="table">
 						{/* head */}
@@ -20,38 +22,26 @@ const CurrentlyCooking = props => {
 							</tr>
 						</thead>
 						<tbody className="text-gray-400">
-							{/* row 1 */}
-							<tr>
-								<th>1</th>
-								<td>Cy Ganderton</td>
-								<td>Quality Control Specialist</td>
-								<td>Blue</td>
-								<td className="btn bg-theme rounded-full">Preparing</td>
-							</tr>
-							{/* row 2 */}
-							<tr>
-								<th>2</th>
-								<td>Hart Hagerty</td>
-								<td>Desktop Support Technician</td>
-								<td>Purple</td>
-								<td className="btn bg-theme rounded-full">Preparing</td>
-							</tr>
-							{/* row 3 */}
-							<tr>
-								<th>3</th>
-								<td>Brice Swyre</td>
-								<td>Tax Accountant</td>
-								<td>Red</td>
-								<td className="btn bg-theme rounded-full">Preparing</td>
-							</tr>
+							{currentlyCookingRecipes.map((recipe, index) => {
+								return (
+									<tr key={index}>
+										<th>{index + 1}</th>
+										<td>{recipe.recipe_name}</td>
+										<td>{recipe.preparing_time}</td>
+										<td>{recipe.calories}</td>
+									</tr>
+								);
+							})}
 						</tbody>
 					</table>
 				</div>
-			</h1>
+			) : (
+				<></>
+			)}
 		</div>
-  )
-}
+	);
+};
 
-CurrentlyCooking.propTypes = {}
+CurrentlyCooking.propTypes = {};
 
-export default CurrentlyCooking
+export default CurrentlyCooking;

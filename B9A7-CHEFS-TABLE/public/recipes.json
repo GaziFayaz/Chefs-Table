@@ -1,6 +1,6 @@
 [
   {
-    "recipe_image": "image_url_1.jpg",
+    "recipe_image": "Basil Chicken Stir-Fry.jpg",
     "id": 1,
     "recipe_name": "Basil Chicken Stir-Fry",
     "short_description": "A delicious stir-fry with chicken, basil, and mushrooms.",
@@ -9,7 +9,7 @@
     "calories": 320
   },
   {
-    "recipe_image": "image_url_2.jpg",
+    "recipe_image": "Vegetable Pasta Primavera.jpg",
     "id": 2,
     "recipe_name": "Vegetable Pasta Primavera",
     "short_description": "A colorful pasta dish with assorted vegetables.",
@@ -18,7 +18,7 @@
     "calories": 280
   },
   {
-    "recipe_image": "image_url_3.jpg",
+    "recipe_image": "Grilled Salmon with Lemon Herb Sauce.jpg",
     "id": 3,
     "recipe_name": "Grilled Salmon with Lemon Herb Sauce",
     "short_description": "Juicy grilled salmon fillets topped with a tangy herb sauce.",
@@ -27,7 +27,7 @@
     "calories": 350
   },
   {
-    "recipe_image": "image_url_4.jpg",
+    "recipe_image": "Caprese Salad.jpg",
     "id": 4,
     "recipe_name": "Caprese Salad",
     "short_description": "A simple yet flavorful Italian salad with tomatoes, mozzarella, and basil.",
@@ -36,7 +36,7 @@
     "calories": 180
   },
   {
-    "recipe_image": "image_url_5.jpg",
+    "recipe_image": "Quinoa and Black Bean Stuffed Peppers.jpg",
     "id": 5,
     "recipe_name": "Quinoa and Black Bean Stuffed Peppers",
     "short_description": "Nutritious and protein-packed stuffed peppers with quinoa and black beans.",
@@ -45,7 +45,7 @@
     "calories": 290
   },
   {
-    "recipe_image": "image_url_6.jpg",
+    "recipe_image": "Mushroom Risotto.jpg",
     "id": 6,
     "recipe_name": "Mushroom Risotto",
     "short_description": "Creamy and savory risotto loaded with mushrooms.",

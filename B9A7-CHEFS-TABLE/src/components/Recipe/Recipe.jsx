@@ -17,9 +17,9 @@ const Recipe = ({ recipe, handleWantToCook }) => {
 		<div className="flex flex-col p-6 border border-neutral-400 rounded-3xl justify-between">
 			<div>
 				<img
-					src="/Rectangle 1.png"
+					src={recipe_image}
 					alt=""
-					className="w-full object-cover h-[200px] rounded-2xl object-center mb-6"
+					className="w-full object-cover h-[250px] rounded-2xl object-center mb-6"
 				/>
 				<h3 className="recipe-title text-xl font-semibold mb-4">
 					{recipe_name}

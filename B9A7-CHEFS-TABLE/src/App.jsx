@@ -21,7 +21,7 @@ function App() {
 		setIsToast(true);
 	};
 	return (
-		<div className="mx-40">
+		<div className="md:mx-16 lg:mx-40">
 			<Navbar />
 			<Banner />
 			<Recipes showToast={showToast} />

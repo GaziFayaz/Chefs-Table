@@ -14,7 +14,7 @@ const RecipesSidebar = ({
 }) => {
 	return (
 		<div className="flex-1">
-			<div className="flex flex-col border border-neutral-400 rounded-3xl py-4 px-2">
+			<div className="flex flex-col border border-neutral-400 md:rounded-3xl py-4 px-2">
 				<WantToCook
 					wantToCookRecipes={wantToCookRecipes}
 					handlePreparing={handlePreparing}

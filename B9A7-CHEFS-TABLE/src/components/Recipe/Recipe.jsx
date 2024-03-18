@@ -14,7 +14,7 @@ const Recipe = ({ recipe, handleWantToCook }) => {
 		calories,
 	} = recipe;
 	return (
-		<div className="flex flex-col p-6 border border-neutral-400 rounded-3xl justify-between">
+		<div className="flex flex-col p-6 md:border border-neutral-400 md:rounded-3xl justify-between">
 			<div>
 				<img
 					src={recipe_image}

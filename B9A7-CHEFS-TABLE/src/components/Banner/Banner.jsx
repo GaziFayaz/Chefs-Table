@@ -1,7 +1,7 @@
 const Banner = () => {
 	return (
-		<div className="w-full bg-banner-pattern bg-cover bg-center rounded-3xl flex flex-col items-center justify-center text-center px-48 py-28 gap-6 mb-12">
-			<h1 className="banner-title text-base-100 text-[52px] font-bold leading-[76px]">
+		<div className="w-full bg-banner-pattern bg-cover bg-center md:rounded-3xl flex flex-col items-center justify-center text-center px-6 md:px-48 py-10 md:py-28 gap-6 mb-12">
+			<h1 className="banner-title text-base-100 text-4xl md:text-[52px] font-bold leading-normal md:leading-[76px]">
 				Discover an exceptional cooking class tailored for you!
 			</h1>
 			<p className="banner-desc text-lg leading-[30px] text-base-100">

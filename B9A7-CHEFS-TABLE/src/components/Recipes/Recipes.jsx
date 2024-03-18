@@ -52,7 +52,7 @@ const Recipes = ({showToast}) => {
 			Unleash your inner chef with our collection of easy-to-follow recipes, guaranteed to impress family and friends.
 			</p>
 			<div className="flex w-full gap-6">
-				<div className="recipe-cards w-3/5 grid grid-cols-2 gap-6">
+				<div className="recipe-cards max-w-[70%] min-w-[70%] grid grid-cols-2 gap-6">
 					{recipes.map((recipe) => (
 						<Recipe
 							key={recipe.id}

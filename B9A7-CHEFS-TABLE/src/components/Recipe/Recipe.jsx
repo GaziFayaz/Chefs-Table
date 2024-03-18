@@ -24,13 +24,13 @@ const Recipe = ({ recipe, handleWantToCook }) => {
 				<h3 className="recipe-title text-xl font-semibold mb-4">
 					{recipe_name}
 				</h3>
-				<p className="recipe-desc font-firaSans text-[#878787] mb-10">
+				<p className="recipe-desc font-firaSans text-[#878787] mb-3">
 					{short_description}
 				</p>
-				<h4 className="ingredients-section text-lg text-[#282828] font-medium mb-4">
+				<h4 className="ingredients-section text-lg text-[#282828] font-medium mb-2">
 					Ingredients: <span>{ingredients.length}</span>
 				</h4>
-				<ul className="list-disc list-inside pl-2 font-firaSans text-lg leading-8 text-[#878787] mb-10">
+				<ul className="list-disc list-inside pl-2 font-firaSans text-lg leading-8 text-[#878787] mb-5">
 					{ingredients.map((ingredient, index) => (
 						<li key={index}>{ingredient}</li>
 					))}

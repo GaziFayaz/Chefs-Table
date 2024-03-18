@@ -12,7 +12,7 @@ export default {
     },
 		extend: {
       backgroundImage: {
-        'banner-pattern': "url('./Rectangle 1.png')"
+        'banner-pattern': "url('/Rectangle 1.png')"
       },
       colors: {
         transparent: 'transparent',
